@@ -1,0 +1,27 @@
+body {
+    background-color: gray;
+    margin: 0;
+}
+
+header {
+    background-color: white;
+    padding: 5px 0;
+}
+
+.layout-positioner {
+    margin: 0 100px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
