@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="layout-positioner">
-            <nav>
+            <nav class="desktop-menu">
                 <ul class="menu-level-1">
                     <li>
                         <a href="#">Элемент 1</a>
@@ -102,6 +102,111 @@
                 </ul>
             </nav>
         </div>
+        <nav class="mobile-menu">
+            <input type="checkbox" id="mobile_menu-checkbox">
+            <label for="mobile_menu-checkbox">
+                <img class="open_menu-icon" src="icons/iconmonstr-menu-1.svg" alt="Иконка открытия меню">
+                <img class="close_menu-icon" src="icons/iconmonstr-x-mark-1.svg" alt="Иконка закрытия меню">
+            </label>
+            <ul class="menu-level-1">
+                <li>
+                    <a href="#">Элемент 1</a>
+                    <div class="submenu-window"></div>
+                </li>
+                <li>
+                    <a href="#">Элемент 2</a>
+                    <input class="submenu_open-checkbox" type="checkbox" id="input-checkbox-2">
+                    <label for="input-checkbox-2">
+                        <img src="icons/iconmonstr-angel-down-thin-16.png" alt="Открытие подменю">
+                    </label>
+                    <div class="submenu-window">
+                        <ul>
+                            <li>
+                                <a href="#">Элемент 2.1</a>
+                            </li>
+                            <li>
+                                <a href="#">Элемент 2.2</a>
+                                <ul class="submenu-level-2">
+                                    <li>
+                                        <a href="#">Элемент 2.2.1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Элемент 2.2.2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Элемент 2.2.3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Элемент 2.3</a>
+                            </li>
+                            <li>
+                                <a href="#">Элемент 2.4</a>
+                                <ul class="submenu-level-2">
+                                    <li>
+                                        <a href="#">Элемент 2.4.1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Элемент 2.4.2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Элемент 2.4.3</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Элемент 2.4.4</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Элемент 2.4.5</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Элемент 2.4.6</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Элемент 2.4.7</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Элемент 2.5</a>
+                            </li>
+                            <li>
+                                <a href="#">Элемент 2.6</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Элемент 3</a>
+                    <div class="submenu-window"></div>
+                </li>
+                <li>
+                    <a href="#">Элемент 4</a>
+                    <input class="submenu_open-checkbox" type="checkbox" id="input-checkbox-4">
+                    <label for="input-checkbox-4">
+                        <img src="icons/iconmonstr-angel-down-thin-16.png" alt="Открытие подменю">
+                    </label>
+                    <div class="submenu-window">
+                        <ul>
+                            <li>
+                                <a href="#">Элемент 4.1</a>
+                            </li>
+                            <li>
+                                <a href="#">Элемент 4.2</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">Элемент 5</a>
+                    <div class="submenu-window"></div>
+                </li>
+                <li>
+                    <a href="#">Элемент 6</a>
+                    <div class="submenu-window"></div>
+                </li>
+            </ul>
+        </nav>
     </header>
 </body>
 </html>
