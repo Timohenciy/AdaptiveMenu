@@ -103,26 +103,41 @@
             </nav>
         </div>
         <nav class="mobile-menu">
-            <input type="checkbox" id="mobile_menu-checkbox">
+            <i class="fa fa-bars"></i>
+            <!-- <input type="checkbox" id="mobile_menu-checkbox">
             <label for="mobile_menu-checkbox">
                 <img class="open_menu-icon" src="icons/iconmonstr-menu-1.svg" alt="Иконка открытия меню">
                 <img class="close_menu-icon" src="icons/iconmonstr-x-mark-1.svg" alt="Иконка закрытия меню">
-            </label>
-            <ul class="menu-level-1">
+            </label> -->
+            <ul class="mobile_menu-level-1">
                 <li>
                     <a href="#">Элемент 1</a>
-                    <div class="submenu-window"></div>
+                    <!-- <input class="submenu_open-checkbox" type="checkbox" id="input-checkbox-1">
+                    <label for="input-checkbox-1">
+                        <img src="icons/iconmonstr-angel-down-thin-16.png" alt="Открытие подменю">
+                    </label> -->
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div class="submenu_window-mobile">
+                        <ul>
+                            <li>
+                                <a href="#">Элемент 4.1</a>
+                                <ul class="submenu-level-2"></ul>
+                            </li>
+                            <li>
+                                <a href="#">Элемент 4.2</a>
+                                <ul class="submenu-level-2"></ul>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 <li>
                     <a href="#">Элемент 2</a>
-                    <input class="submenu_open-checkbox" type="checkbox" id="input-checkbox-2">
-                    <label for="input-checkbox-2">
-                        <img src="icons/iconmonstr-angel-down-thin-16.png" alt="Открытие подменю">
-                    </label>
-                    <div class="submenu-window">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div class="submenu_window-mobile">
                         <ul>
                             <li>
                                 <a href="#">Элемент 2.1</a>
+                                <ul class="submenu-level-2"></ul>
                             </li>
                             <li>
                                 <a href="#">Элемент 2.2</a>
@@ -140,6 +155,7 @@
                             </li>
                             <li>
                                 <a href="#">Элемент 2.3</a>
+                                <ul class="submenu-level-2"></ul>
                             </li>
                             <li>
                                 <a href="#">Элемент 2.4</a>
@@ -169,44 +185,57 @@
                             </li>
                             <li>
                                 <a href="#">Элемент 2.5</a>
+                                <ul class="submenu-level-2"></ul>
                             </li>
                             <li>
                                 <a href="#">Элемент 2.6</a>
+                                <ul class="submenu-level-2"></ul>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li>
                     <a href="#">Элемент 3</a>
-                    <div class="submenu-window"></div>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div class="submenu_window-mobile"></div>
                 </li>
                 <li>
                     <a href="#">Элемент 4</a>
-                    <input class="submenu_open-checkbox" type="checkbox" id="input-checkbox-4">
-                    <label for="input-checkbox-4">
-                        <img src="icons/iconmonstr-angel-down-thin-16.png" alt="Открытие подменю">
-                    </label>
-                    <div class="submenu-window">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div class="submenu_window-mobile">
                         <ul>
                             <li>
                                 <a href="#">Элемент 4.1</a>
+                                <ul class="submenu-level-2"></ul>
                             </li>
                             <li>
                                 <a href="#">Элемент 4.2</a>
+                                <ul class="submenu-level-2"></ul>
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li>
                     <a href="#">Элемент 5</a>
-                    <div class="submenu-window"></div>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div class="submenu_window-mobile"></div>
                 </li>
                 <li>
                     <a href="#">Элемент 6</a>
-                    <div class="submenu-window"></div>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div class="submenu_window-mobile"></div>
                 </li>
             </ul>
         </nav>
     </header>
+    <section>
+        <img src="img/Bitmap.png" alt="">
+        <img src="img/colls1.png" alt="">
+        <img src="img/colls4.png" alt="">
+        <img src="img/colls5.png" alt="">
+        <img src="img/colls7.png" alt="">
+    </section>
+    <script src="https://use.fontawesome.com/e222de59ed.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
