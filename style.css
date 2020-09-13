@@ -100,7 +100,6 @@ body section img {
         border-left: 2px solid rgba(191, 191, 191, 0.5);
         padding-left: 10px;
         padding-right: 5px;
-        order: 1;
     }
 
     i.fa.fa-bars {
@@ -119,6 +118,15 @@ body section img {
         text-align: right;
     }
 
+    .mobile-menu ul {
+        visibility: hidden;
+        height: 0;
+        background-color: #f3f3f3;
+        flex: 1 0 100%;
+        margin: 10px -10px 0;
+        order: 1;
+    }
+
     .mobile-menu ul li {
         display: flex;
         flex-wrap: wrap;
@@ -127,56 +135,22 @@ body section img {
         padding: 15px 10px;
     }
     
-    .mobile_menu-level-1 {
-        visibility: hidden;
-        position: absolute;
+    .mobile-menu .mobile_menu-level-1 {
         background-color: white;
         width: 100%;
-        height: 0;
         border-top: 1px solid rgba(191, 191, 191, 0.5);
         margin: 0;
-        z-index: 0;
     }
 
-    .submenu_window-mobile {
-        visibility: hidden;
-        background-color: #f3f3f3;
-        flex-basis: 100%;
-        flex-grow: 1;
-        height: 0;
-        margin: 10px -10px 0;
-        order: 2;
-        z-index: -1;
+    .mobile-menu .mobile_menu-level-3 {
+        padding-left: 15px;
     }
 
-    .submenu_window-mobile:empty + .fa-angle-down, .submenu_window-mobile .submenu-level-2:empty + .fa-angle-down {
+    .mobile_menu-level-1 ul:empty + .fa-angle-down {
         visibility: hidden;
     }
 
-    .submenu_window-mobile .submenu-level-2 {
-        visibility: hidden;
-        background-color: #f3f3f3;
-        flex-basis: 100%;
-        flex-grow: 1;
-        height: 0;
-        margin: 10px -10px 0;
-        order: 2;
-        z-index: -1;
-    }
-
-    .submenu-level-2-mobile {
-        visibility: hidden;
-        background-color: #f3f3f3;
-        flex-basis: 100%;
-        flex-grow: 1;
-        height: 0;
-        margin: 10px -10px 0;
-        order: 2;
-        z-index: -1;
-    }
-
-    .open_dropdown_menu {
-        position: relative;
+    .mobile-menu .open_dropdown_menu {
         visibility: visible;
         transition: 0.2s ease-in;
         height: auto;
