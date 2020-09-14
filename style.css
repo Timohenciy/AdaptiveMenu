@@ -86,8 +86,11 @@ body section img {
 @media screen and (max-width: 768px) {
 
     header {
-        position: sticky;
+        position: fixed;
         top: 0;
+        width: 100%;
+        overflow-y: scroll;
+        max-height: 100%;
     }
 
     .desktop-menu {
@@ -116,25 +119,17 @@ body section img {
     .mobile-menu {
         display: block;
         text-align: right;
+        
     }
 
     .mobile-menu ul {
-        visibility: hidden;
-        height: 0;
+        display: none;
         background-color: #f3f3f3;
         flex: 1 0 100%;
         margin: 10px -10px 0;
         order: 1;
     }
 
-    .mobile-menu ul li {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-left: 0;
-        padding: 15px 10px;
-    }
-    
     .mobile-menu .mobile_menu-level-1 {
         background-color: white;
         width: 100%;
@@ -146,14 +141,24 @@ body section img {
         padding-left: 15px;
     }
 
+    .mobile-menu ul li {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 0;
+        padding: 15px 10px;
+    }
+
     .mobile_menu-level-1 ul:empty + .fa-angle-down {
         visibility: hidden;
     }
 
     .mobile-menu .open_dropdown_menu {
-        visibility: visible;
-        transition: 0.2s ease-in;
-        height: auto;
+        display: block;
+    }
+
+    .overflow_hidden-body {
+        overflow: hidden;
     }
 
     
